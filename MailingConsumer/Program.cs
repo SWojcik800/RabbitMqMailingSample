@@ -1,7 +1,9 @@
 using Common.RabbitMq;
+using Common.Smtp;
 using MailingProducer.Contracts;
 using MailingProducer.Contracts.Messages;
 using MailingProducer.Contracts.Requests;
+using System.Net.Mail;
 
 var builder = WebApplication.CreateBuilder(args);
 var configuration = builder.Configuration;
@@ -22,14 +24,24 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+builder.Services.Configure<SmtpSettings>(configuration.GetSection("SmtpSettings"));
+
 var messageBus = app.Services.GetRequiredService<IMessageBus>();
+var smtpSettings = app.Services.GetRequiredService<SmtpSettings>();
 messageBus.Subscribe<MailingMessage>(AppConsts.MailRequestsExchange, AppConsts.MailRequestsQueue, AppConsts.MailRequestsRoutingKey, 
     (MailingMessage request)
     =>
     {
         if(request.SendMailType is SendMailType.Server)
         {
-            //send via mail server
+            using (var smptClient = SmtpClientFactory.Create(smtpSettings))
+            {
+
+                var message = new MailMessage(request.From, request.To, request.Title, request.Content);
+
+                smptClient.Send(message);
+            };
+
         } else
         {
             Console.WriteLine($"---------------MESSAGE SEND---------------");

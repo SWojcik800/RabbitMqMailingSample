@@ -13,7 +13,6 @@ namespace MailingProducer.Mailing
     {
         private readonly IMessageBus _messageBus;
         private readonly IValidator<MailingMessage> _validator;
-
         public MailingController(IMessageBus messageBus, IValidator<MailingMessage> validator)
         {
             _messageBus = messageBus;
