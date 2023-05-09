@@ -1,6 +1,9 @@
 using RabbitMQ.Client;
 using Microsoft.Extensions.Configuration;
 using Common.RabbitMq;
+using FluentValidation;
+using MailingProducer;
+using FluentValidation.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,6 +12,8 @@ IConfiguration configuration = builder.Configuration;
 
 //builder.Services.AddSingleton(configuration);
 builder.Services.AddMessageBus(configuration);
+
+builder.Services.AddValidatorsFromAssembly(typeof(IMailingProducerAssemblyMarker).Assembly);
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
