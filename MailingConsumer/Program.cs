@@ -9,6 +9,8 @@ var builder = WebApplication.CreateBuilder(args);
 var configuration = builder.Configuration;
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+
+builder.Services.AddSmtpClientConfig(configuration);
 builder.Services.AddMessageBus(configuration);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -24,7 +26,6 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-builder.Services.Configure<SmtpSettings>(configuration.GetSection("SmtpSettings"));
 
 var messageBus = app.Services.GetRequiredService<IMessageBus>();
 var smtpSettings = app.Services.GetRequiredService<SmtpSettings>();
