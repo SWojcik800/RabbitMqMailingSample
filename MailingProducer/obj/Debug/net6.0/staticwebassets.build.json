@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "zgbMZbV2anqWtGUZMPfwXDFPzcP1LLTP772DWDtG1lo=",
+  "Source": "MailingProducer",
+  "BasePath": "_content/MailingProducer",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

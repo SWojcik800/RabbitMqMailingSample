@@ -1,0 +1,12 @@
+C:\Users\Ldvs\Desktop\RabbitMqMailingSample\MailingProducer.Contracts\bin\Debug\net6.0\MailingProducer.Contracts.deps.json
+C:\Users\Ldvs\Desktop\RabbitMqMailingSample\MailingProducer.Contracts\bin\Debug\net6.0\MailingProducer.Contracts.dll
+C:\Users\Ldvs\Desktop\RabbitMqMailingSample\MailingProducer.Contracts\bin\Debug\net6.0\ref\MailingProducer.Contracts.dll
+C:\Users\Ldvs\Desktop\RabbitMqMailingSample\MailingProducer.Contracts\bin\Debug\net6.0\MailingProducer.Contracts.pdb
+C:\Users\Ldvs\Desktop\RabbitMqMailingSample\MailingProducer.Contracts\obj\Debug\net6.0\MailingProducer.Contracts.csproj.AssemblyReference.cache
+C:\Users\Ldvs\Desktop\RabbitMqMailingSample\MailingProducer.Contracts\obj\Debug\net6.0\MailingProducer.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ldvs\Desktop\RabbitMqMailingSample\MailingProducer.Contracts\obj\Debug\net6.0\MailingProducer.Contracts.AssemblyInfoInputs.cache
+C:\Users\Ldvs\Desktop\RabbitMqMailingSample\MailingProducer.Contracts\obj\Debug\net6.0\MailingProducer.Contracts.AssemblyInfo.cs
+C:\Users\Ldvs\Desktop\RabbitMqMailingSample\MailingProducer.Contracts\obj\Debug\net6.0\MailingProducer.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\Ldvs\Desktop\RabbitMqMailingSample\MailingProducer.Contracts\obj\Debug\net6.0\MailingProducer.Contracts.dll
+C:\Users\Ldvs\Desktop\RabbitMqMailingSample\MailingProducer.Contracts\obj\Debug\net6.0\ref\MailingProducer.Contracts.dll
+C:\Users\Ldvs\Desktop\RabbitMqMailingSample\MailingProducer.Contracts\obj\Debug\net6.0\MailingProducer.Contracts.pdb
